@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+    -moz-animation-scroll-behavior: smooth;
+}
+:root{
+    --bg: #1a1a1a;
+    --light: #fdfdfd;
+    --primary: #eb563f;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: tomato;
+}
+ul, li{
+    list-style: none;
+}
+body{
+    background-color: var(--bg);
+
+    font-family: 'Roboto';
+    color: var(--light);
+}
+.bg-flex{
+    display: flex;
+}
+.btn{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border: 0px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    padding: 10px;
+    transition: all 180ms ease-in-out 0s;
+    margin-top: 10px;
+}
+.container{
+    max-width: 1000px;
+  
+    margin: 0 auto;
+}
+ul li a, h1.logo{
+    color: var(--light);
+    opacity: 0.8;
+}
+nav.menu{
+    margin-bottom: 92px;
+    background-color: rgb(56,56, 60);
+    box-shadow: rgb(18 18 20) 0px 1rem 2rem;
+    padding: 30px;
+    max-width: 100%;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul.menu-list{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ul.menu-list li{
+    margin-right: 18px;
+}
+ul.menu-list li:last-child{
+    margin-right: 0;
+}
+h2{
+    font-size: 40px;
+    opacity: 0.7;
+}
+h5{
+    margin-bottom: 12px;
+}
+.ditaile{
+    width: 640px;
+    z-index: 9999999;
+    margin-left: 30px;
+}
+.user-img{
+    width: 300px;
+}
+.user{
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-bottom: 122px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user img{
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 22px;
+}
+
+.list{
+    margin-top: 22px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list li{
+    margin-top: 12px;
+    opacity: 0.7;
+    background-color: rgb(32, 32, 32);
+    width: 111px;
+    margin-right: 22px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+}
+.list img, .list-port img{
+    width: 60px;
+}
+.list li:hover, .list-port:hover{
+    transition: ease .7s;
+    box-shadow: 10px 10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.port{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+
+}
+
+.list-port{
+    background-color: rgb(32, 32, 36);
+    width: 200px;
+    margin-right: 22px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    padding: 40px;
+    margin-top: 12px;
+}
+.list-port p{
+    margin-top: 10px;
+}
+footer{
+    background-color: rgb(32, 32, 36);
+    padding: 20px;
+    margin-top: 22px;
+}
+footer p{
+    margin-right: 12px;
+}
+footer .container{
+    flex-wrap: wrap;
+}
+footer p:last-child{
+    margin-right: 0;
+}
+@media (max-width: 800px) {
+    .list-port{
+        margin-top: 22px;
+        margin-bottom: 12px;
+    }
+    .list{
+        align-items: center;
+        justify-content: center;
+    }
+    .user-img {
+        margin-top: 12px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .user-img img{
+        width: 300px;
+    }
+    .user-img h2, .user-img p{
+        text-align: center;
+    }
+    .port{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-port{
+        width: 60%;
+    }
+    .ditaile{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 809px) and (max-width: 1000px) {
+
+    .ditaile{
+        width: 500px;
+        z-index: 9999999;
+        margin-left: 30px;
+    }
+    .user-img{
+        width: 200px;
+    }
+    .container{
+        padding: 10px;
+    }
+    .list-port{
+
+        width: 150px;
+
+    }
+}
